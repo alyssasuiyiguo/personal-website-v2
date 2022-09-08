@@ -25,55 +25,59 @@ const Header = () => {
         </Link>
       </div>
       <HStack gap="8">
-        <Flex gap="0">
-          <Text
-            style={{
-              color: "#d54864",
-              fontFamily: "Overpass Mono, monospace",
-              fontSize: "1.1vw",
-              marginLeft: "0 0.8vw",
-              paddingLeft: "0 0.8vw",
-            }}
-          >
-            01.
-          </Text>
-          <Text
-            style={{
-              color: "#debda6",
-              fontFamily: "Overpass Mono, monospace",
-              fontSize: "1.1vw",
-              marginRight: "0 0.8vw",
-              paddingRight: "0 0.8vw",
-            }}
-          >
-            About
-          </Text>
-        </Flex>
-        <Flex gap="0">
-          <Text
-            style={{
-              color: "#d54864",
-              fontFamily: "Overpass Mono, monospace",
-              fontSize: "1.1vw",
-              marginLeft: "0 0.8vw",
-              paddingLeft: "0 0.8vw",
-            }}
-          >
-            02.
-          </Text>
-          <Text
-            style={{
-              color: "#debda6",
-              fontFamily: "Overpass Mono, monospace",
-              fontSize: "1.1vw",
-              marginRight: "0 0.8vw",
-              paddingRight: "0 0.8vw",
-            }}
-          >
-            Experience
-          </Text>
-        </Flex>
-        <Flex gap="0">
+        <a href="#about">
+          <Flex gap="0">
+            <Text
+              style={{
+                color: "#d54864",
+                fontFamily: "Overpass Mono, monospace",
+                fontSize: "1.1vw",
+                marginLeft: "0 0.8vw",
+                paddingLeft: "0 0.8vw",
+              }}
+            >
+              01.
+            </Text>
+            <Text
+              style={{
+                color: "#debda6",
+                fontFamily: "Overpass Mono, monospace",
+                fontSize: "1.1vw",
+                marginRight: "0 0.8vw",
+                paddingRight: "0 0.8vw",
+              }}
+            >
+              About
+            </Text>
+          </Flex>
+        </a>
+        <a href="#experience">
+          <Flex gap="0">
+            <Text
+              style={{
+                color: "#d54864",
+                fontFamily: "Overpass Mono, monospace",
+                fontSize: "1.1vw",
+                marginLeft: "0 0.8vw",
+                paddingLeft: "0 0.8vw",
+              }}
+            >
+              02.
+            </Text>
+            <Text
+              style={{
+                color: "#debda6",
+                fontFamily: "Overpass Mono, monospace",
+                fontSize: "1.1vw",
+                marginRight: "0 0.8vw",
+                paddingRight: "0 0.8vw",
+              }}
+            >
+              Experience
+            </Text>
+          </Flex>
+        </a>
+        {/* <Flex gap="0">
           <Text
             style={{
               color: "#d54864",
@@ -96,7 +100,7 @@ const Header = () => {
           >
             Contact
           </Text>
-        </Flex>
+        </Flex> */}
         <Resume text={"Resume"} />
       </HStack>
     </Flex>

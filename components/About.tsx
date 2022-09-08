@@ -5,15 +5,14 @@ import me from "../public/me.jpg";
 
 const About = () => {
   return (
-    <Box ml={5}>
+    <div id="about">
       <Subtitle text="About Me" num="01" />
       <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(10, 1fr)">
         <GridItem colSpan={5}>
           <Flex
             direction="column"
             justify="space-around"
-            style={{ height: "80%" }}
-            mt={8}
+            style={{ height: "85%" }}
             mb={3}
           >
             <Text
@@ -48,7 +47,10 @@ const About = () => {
               }}
             >
               I also have avid leadership experience, as outlined in my{" "}
-              <a style={{ textDecoration: "underline", color: "#d54864" }}>
+              <a
+                style={{ textDecoration: "underline", color: "#d54864" }}
+                href="#experience"
+              >
                 clubs and experience.
               </a>
             </Text>
@@ -61,7 +63,10 @@ const About = () => {
             >
               I'm always open to new learning opportunities, and would love to
               connect! Please feel free to{" "}
-              <a style={{ textDecoration: "underline", color: "#d54864" }}>
+              <a
+                style={{ textDecoration: "underline", color: "#d54864" }}
+                href="mailto:alyssasuiyiguo@gmail.com"
+              >
                 reach out.
               </a>
             </Text>
@@ -71,7 +76,7 @@ const About = () => {
           <Image src={me}></Image>
         </GridItem>
       </Grid>
-    </Box>
+    </div>
   );
 };
 

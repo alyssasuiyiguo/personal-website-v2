@@ -2,7 +2,7 @@ import { HStack, Text } from "@chakra-ui/react";
 
 const Subtitle = ({ text, num }) => {
   return (
-    <HStack mt={20}>
+    <HStack mt={20} mb={8}>
       <Text
         style={{
           color: "#d54864",
